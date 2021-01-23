@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootstrap/scss/reboot";
+@import "reset";
+
+$mdc-theme-primary: #607d8b; // primary color
+$mdc-theme-secondary: #990000; // secondary color
+
+$mdc-typography-font-family: 'News Cycle', sans-serif !default;
+
+body, html {
+  font-family: 'News Cycle', sans-serif !important;
+  font-weight: 300 !important;
+  height: 100vh;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'News Cycle', sans-serif !important;
+  font-weight: 300 !important
+}
+
+.dignity, mdc-app-bar {
+  font-family: "News Cycle", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.material-icons, .fas, .fab, .fa {
+  vertical-align: middle;
+}
+
+@import "../node_modules/@angular-mdc/theme/material";

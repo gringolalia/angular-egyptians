@@ -1,0 +1,45 @@
+.
+├── angular.json
+├── e2e
+│   ├── protractor.conf.js
+│   ├── src
+│   │   ├── app.e2e-spec.ts
+│   │   └── app.po.ts
+│   └── tsconfig.e2e.json
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── README.md
+├── src
+│   ├── app
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── app.routing.ts
+│   │   ├── cairo
+│   │   ├── material.module.ts
+│   │   └── pages
+│   ├── assets
+│   ├── browserslist
+│   ├── environments
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── karma.conf.js
+│   ├── main.ts
+│   ├── manifest.json
+│   ├── polyfills.ts
+│   ├── styles.scss
+│   ├── sw.js
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── tslint.json
+├── tree.txt
+├── tsconfig.json
+└── tslint.json
+
+8 directories, 34 files

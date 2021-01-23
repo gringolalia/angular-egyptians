@@ -1,0 +1,75 @@
+<mdc-app-bar [mdcElevation]="5" #appbar [fixed]="true" [fixedAdjustElement]="mainContent" class="dignity">
+  <mdc-app-bar-row>
+    <mdc-app-bar-section align="start" class="with dignity" style="font-size: 22px;">
+      <mdc-icon mdcAppBarNavIcon (click)="appdrawer.open()">menu</mdc-icon><i class="fas fa-sun fa-2x mr-3"></i>Engenho Novo LLC
+    </mdc-app-bar-section>
+  </mdc-app-bar-row>
+</mdc-app-bar>
+
+<mdc-drawer #appdrawer="mdcDrawer" drawer='temporary' [closeOnClick]="false">
+  <mdc-drawer-content class="with dignity">
+    <mdc-list-group >
+      <mdc-list class="dignity" (click)="appdrawer.close()">
+
+        <mdc-list-divider></mdc-list-divider>
+
+        <div class="top-list">
+
+          <a [ngClass]="{'active-item': pageTitle === 'home' }" mdc-list-item [routerLink]="['/']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'home' }" [fontSize]="25" mdcListItemGraphic>rowing</mdc-icon>Fim da Picada
+          </a>
+
+          <a [ngClass]="{'active-item': pageTitle === 'home' }" mdc-list-item [routerLink]="['home']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'home' }" [fontSize]="25" mdcListItemGraphic>all_inclusive</mdc-icon>In Media Res
+          </a>
+
+          <a [ngClass]="{'active-item': pageTitle === 'about' }" mdc-list-item [routerLink]="['al-mustansir']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'about' }" [fontSize]="25" mdcListItemGraphic>my_location</mdc-icon>Ubatuba
+          </a>
+          <a [ngClass]="{'active-item': pageTitle === 'team' }" mdc-list-item [routerLink]="['barber-of-baghdad']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'team' }" [fontSize]="25" mdcListItemGraphic>beach_access</mdc-icon>San Pavlov
+          </a>
+          <a [ngClass]="{'active-item': pageTitle === 'events' }" mdc-list-item [routerLink]="['ali-baba']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'events' }" [fontSize]="25" mdcListItemGraphic>restaurant</mdc-icon>Acontecimentos
+              </a>
+          <a [ngClass]="{'active-item': pageTitle === 'talks' }" mdc-list-item [routerLink]="['harun-al-rashid']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'talks' }" [fontSize]="25" mdcListItemGraphic>smoking_rooms</mdc-icon>Tabagismo
+          </a>
+          <a [ngClass]="{'active-item': pageTitle === 'cairo' }" mdc-list-item [routerLink]="['shahriyar']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'cairo' }" [fontSize]="25" mdcListItemGraphic>local_bar</mdc-icon>Alcoólatras
+              </a>
+          <a [ngClass]="{'active-item': pageTitle === 'cairo' }" mdc-list-item [routerLink]="['shahrazad']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'cairo' }" [fontSize]="25" mdcListItemGraphic>mic</mdc-icon>Singer of Tales
+          </a>
+          <a [ngClass]="{'active-item': pageTitle === 'cairo' }" mdc-list-item [routerLink]="['sindbad']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'cairo' }" [fontSize]="25" mdcListItemGraphic>directions_boat</mdc-icon>Marinheiro, Marinheiro
+          </a>
+          <a [ngClass]="{'active-item': pageTitle === 'cairo' }" mdc-list-item [routerLink]="['muhammad']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'cairo' }" [fontSize]="25" mdcListItemGraphic>rowing</mdc-icon>O Profeta
+          </a>
+
+        </div>
+        <div class="bottom-list">
+          <a [ngClass]="{'active-item' : pageTitle === 'contact'}" mdc-list-item [routerLink]="['night-visitors']" routerLinkActive #rlaHome="routerLinkActive">
+            <mdc-icon [ngClass]="{'active-icon': pageTitle === 'contact' }" [fontSize]="25" mdcListItemGraphic>fastfood</mdc-icon>In and Out Burger
+          </a>
+        </div>
+      </mdc-list>
+    </mdc-list-group>
+  </mdc-drawer-content>
+</mdc-drawer>
+
+<div #mainContent>
+  <router-outlet></router-outlet>
+
+  <footer>
+
+  </footer>
+</div>
+
+<style>
+  mdc-app-bar, .dignity {
+    font-family: 'News Cycle', sans-serif !important;
+    font-weight: 300 !important;
+  }
+</style>

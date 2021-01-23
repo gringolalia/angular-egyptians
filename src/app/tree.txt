@@ -1,0 +1,18 @@
+.
+├── app.component.html
+├── app.component.scss
+├── app.component.spec.ts
+├── app.component.ts
+├── app.module.ts
+├── app.routing.ts
+├── cairo
+│   ├── cairo.component.html
+│   ├── cairo.component.scss
+│   ├── cairo.component.spec.ts
+│   └── cairo.component.ts
+├── material.module.ts
+├── pages
+│   └── index-page
+└── tree.txt
+
+3 directories, 12 files
